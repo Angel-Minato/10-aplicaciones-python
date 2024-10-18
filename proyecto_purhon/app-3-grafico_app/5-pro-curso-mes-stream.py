@@ -4,7 +4,7 @@ from datetime import datetime
 from pytz import utc
 import matplotlib.pyplot as plt
 
-dt = pd.read_csv("./grafico_app/reviews.csv", parse_dates=['Timestamp'])
+dt = pd.read_csv("./app-3-2grafico_app/reviews.csv", parse_dates=['Timestamp'])
 dt['Month'] = dt['Timestamp'].dt.strftime('%Y-%m')
 Month_average_crs = dt.groupby(['Month','Course Name'])['Rating'].mean().unstack()
 print(Month_average_crs)

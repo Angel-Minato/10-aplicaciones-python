@@ -3,7 +3,7 @@ import pandas as pd
 from datetime import datetime
 from pytz import utc
 import time
-dt = pd.read_csv("C:/Users/USUARIO/Documents/proyecto_purhon/grafico_app/reviews.csv", parse_dates=['Timestamp'])
+dt = pd.read_csv("./app-3-2grafico_app/reviews.csv", parse_dates=['Timestamp'])
 dt['Week'] = dt['Timestamp'].dt.strftime('%Y-%U')
 Week_average = dt.groupby(['Week']).mean(numeric_only=True)
 

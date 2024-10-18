@@ -3,7 +3,7 @@ import pandas
 from datetime import datetime
 from pytz import utc
  
-data = pandas.read_csv("./grafico_app/reviews.csv", parse_dates=['Timestamp'])
+data = pandas.read_csv("./app-3-2grafico_app/reviews.csv", parse_dates=['Timestamp'])
 data['Weekday'] = data['Timestamp'].dt.strftime('%A')
 data['Daynumber'] = data['Timestamp'].dt.strftime('%w')
  

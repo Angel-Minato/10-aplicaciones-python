@@ -4,7 +4,7 @@ from datetime import datetime
 from pytz import utc
 import matplotlib.pyplot as plt
 import time
-dt = pd.read_csv("C:/Users/USUARIO/Documents/proyecto_purhon/grafico_app/reviews.csv", parse_dates=['Timestamp'])
+dt = pd.read_csv("./app-3-2grafico_app/reviews.csv", parse_dates=['Timestamp'])
 dt['Day'] = dt['Timestamp'].dt.date
 day_average = dt.groupby(['Day']).mean(numeric_only=True)
 

@@ -3,7 +3,7 @@ import pandas
 from datetime import datetime
 from pytz import utc
  
-data = pandas.read_csv("C:/Users/USUARIO/Documents/proyecto_purhon/grafico_app/reviews.csv", parse_dates=['Timestamp'])
+data = pandas.read_csv("./app-3-2grafico_app/reviews.csv", parse_dates=['Timestamp'])
 data['Month'] = data['Timestamp'].dt.strftime('%Y-%m')
 month_average = data.groupby(['Month']).mean(numeric_only=True)
  

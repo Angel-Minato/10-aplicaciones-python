@@ -4,7 +4,7 @@ from datetime import datetime
 from pytz import utc
 import matplotlib.pyplot as plt
 
-dt = pd.read_csv("./grafico_app/reviews.csv", parse_dates=['Timestamp'])
+dt = pd.read_csv("./app-3-2grafico_app/reviews.csv", parse_dates=['Timestamp'])
 shara = dt.groupby(['Course Name'])['Rating'].count()
 print(shara)
 
