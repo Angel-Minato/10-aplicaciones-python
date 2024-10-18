@@ -1,0 +1,53 @@
+
+.gitignore.txt
+# Entornos virtuales
+venv/
+virtual/
+env/
+ENV/
+.venv/
+.pyenv/
+
+# Bytecode compilado de Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Configuración de IDEs (como PyCharm, VSCode)
+.idea/
+.vscode/
+
+# Archivos de Jupyter Notebooks
+.ipynb_checkpoints/
+
+# Archivos de logs
+*.log
+
+# Archivos de instalación
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Archivos de pruebas unitarias
+.coverage
+.tox/
+.nox/
+.cache/
+
+# Archivos de caché
+*.cache
+*.mypy_cache/
+*.pytest_cache/
+*__pycache__/
+
+# Archivos temporales
+*.tmp
+*.swp
+*.bak
+
+# Archivos relacionados con Anaconda
+*.conda
+

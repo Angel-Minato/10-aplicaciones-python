@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<title> Super Geocodificador </title>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="../static/main.css" rel="stylesheet">
+
+</head>
+  <body>
+    <div class="container card m-3">
+        <div class="crad-body ">
+            <h1 class="card-title">Super Geocodificador</h1>
+            <h3 class="card-text">Por favor, sube tu archivo CSV. Los valores que contienen direcciones deben estar en una columna llamada <em>address</em> o <em>Address</em></h3>
+                <form action="{{url_for('success_table')}}" method="POST" enctype="multipart/form-data">
+                <input type="file" accept=".csv" name="file" />
+                <button  type="submit"> Enviar </button>
+                </form>
+            <div class="output">
+                {{ text|safe }}
+                {% include btn ignore missing %}
+            </div>
+        </div>
+  </div>
+ 
+  </body>
+</html>

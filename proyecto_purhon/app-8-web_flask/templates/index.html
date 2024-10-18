@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+  <title> Aplicación de Recolección de Datos</title>
+  <head>
+    <link href="../static/main.css" rel="stylesheet">
+  </head>
+    <body>
+      <div class="container">
+        <h1>Recolección de altura</h1>
+        <h3>Por favor, complete las entradas para obtener estadísticas de la población sobre la altura</h3>
+        <div class="message">
+            {{text | safe}}
+        </div>
+        <form action="{{url_for('success')}}" method="POST" enctype="multipart/form-data">
+          <input title="tu email por favor" placeholder="ingresa tu email" type="email" name="email_name" required> <br>
+          <input title="tu altura" placeholder="ingresa tu altura en cm" type="numer" min="50" max="350" name="height_name" required> <br>
+          <button type="submit"> Enviar </button>
+        </form>
+      </div>
+    </body>
+</html>
+

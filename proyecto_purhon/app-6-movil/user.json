@@ -1,0 +1,27 @@
+[
+    {
+        "username": "unesco",
+        "password": "poda",
+        "created": "2024-10-02T09:30:00"
+    },
+    {
+        "username": "mars",
+        "password": "rocky",
+        "created": "2024-10-01T15:20:10"
+    },
+    {
+        "username": "athena",
+        "password": "wisdom123",
+        "created": "2024-09-30T08:10:30"
+    },
+    {
+        "username": "poseidon",
+        "password": "seaKing",
+        "created": "2024-09-29T12:45:00"
+    },
+    {
+        "username": "apollo",
+        "password": "sunrays",
+        "created": "2024-09-28T22:05:50"
+    }
+]
